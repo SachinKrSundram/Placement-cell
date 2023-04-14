@@ -1,0 +1,14 @@
+{
+  "name": "placement-cell",
+  "version": "1.0.0",
+  "description": "Full stack app for compies and student for placement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SachinKrSundram",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
