@@ -46,4 +46,4 @@ A web app where user can create account, manage students, schedule and allocate 
 
 ### Author
 
- * @SachinKrSundram
+ * [@SachinKrSundram](https://github.com/SachinKrSundram/)
