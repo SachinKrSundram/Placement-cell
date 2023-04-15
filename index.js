@@ -5,6 +5,11 @@ const PORT = process.env.PORT || 8000;
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const db = require('./config/mongoose');
+const passport = require('passport');
+const passportLocal = require('./config/passport');
+const mongoStore = require('connect-mongo');
+//create session
+const session = require('express-session');
 const MongoStore = require('connect-mongo');
 
 
@@ -52,3 +57,23 @@ app.use(
         }
     })
 );
+
+
+// middleware to use passport with express
+app.use(passport.saveUnintialize());
+//needed to use express session with passport
+app.use(passport.session());
+
+
+// set authenticated user in the resspose
+app.use('/', require('./routes'));
+
+app.listen(PORT, function(err){
+    if(err){
+        console.log(`Error in starting server: ${err}`);
+        return;
+    }
+    else{
+        console.log(`Server sucessfully listening at port ${PORT}`);
+    }
+})
