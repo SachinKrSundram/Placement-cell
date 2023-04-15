@@ -43,3 +43,7 @@ A web app where user can create account, manage students, schedule and allocate 
  * passport-jwt
  * passport-local
 
+
+### Author
+
+ * @SachinKrSundram
