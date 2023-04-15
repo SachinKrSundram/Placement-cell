@@ -24,5 +24,16 @@
   },
   "devDependencies": {},
   "author": "SachinKrSundram",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SachinKrSundram/Placement-cell.git"
+  },
+  "keywords": [
+    "Skill-Test"
+  ],
+  "bugs": {
+    "url": "https://github.com/SachinKrSundram/Placement-cell/issues"
+  },
+  "homepage": "https://github.com/SachinKrSundram/Placement-cell#readme"
 }
